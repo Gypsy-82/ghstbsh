@@ -1,0 +1,26 @@
+/target
+
+# secrets / keys — backstop; these should never be in the repo in the first place
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.kdbx
+*.vault
+credentials*
+
+# editor / OS junk
+*.swp
+*~
+.DS_Store
+
+# assistant / session files — belt-and-suspenders (deleting them is still the real fix)
+CLAUDE.md
+.claude/
+handoff.md
+history.md
+*.log

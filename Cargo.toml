@@ -1,0 +1,15 @@
+[package]
+name = "ghstbsh"
+version = "0.1.0"
+edition = "2021"
+description = "Launch a shell whose command history lives only in RAM and never touches persistent disk"
+license = "MIT"
+
+[[bin]]
+name = "ghstbsh"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = "z"
+lto = true
+strip = true
