@@ -245,3 +245,7 @@ rm -f ~/.bash_history ~/.zsh_history ~/.lesshst ~/.mysql_history \
 
 Plain `rm` is correct: since `shred` can't guarantee overwrite on SSD/CoW
 anyway, removing the file is what defeats a later `cat`.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
